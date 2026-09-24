@@ -1,46 +1,48 @@
-# Как я захожу в игры — туториал
+# Enter The Game — how I get inside video games
 
-Сажусь за PS5, нажимаю кнопку — и оказываюсь внутри игры. Вот как это сделано.
+I sit down at my PS5, press a button, and end up inside the game. Here's exactly how it's done.
 
-**Нужно:** Higgsfield (~15 $/мес), CapCut (бесплатно), 25 своих фото. Первый ролик — вечер, дальше час.
+🇷🇺 [Читать по-русски](README.ru.md)
 
----
-
-## Главное правило
-
-Не проси «сделай видео». **Дай две картинки — первый кадр и последний — и опиши, что между ними.**
-
-Я четыре раза пытался словами заставить персонажа сесть с водительской стороны: «левая дверь», «ближняя к камере», «не обходи машину». Каждый раз садился не туда. Сработало, когда я нарисовал кадр «он уже за рулём» и отдал его как последний.
-
-Поэтому порядок такой: **сначала картинки, потом видео.** Картинка стоит 2 кредита, видео — 12.
+**You need:** Higgsfield (~$15/mo), CapCut (free), 25 photos of yourself. The first video takes an evening, after that about an hour.
 
 ---
 
-## 1. Лицо
+## The one rule that matters
 
-25–30 фото: анфас крупно, по 4 в три четверти влево и вправо, 2 профиля, по пояс, в полный рост, разные эмоции.
+Don't ask for "a video". **Give the model two pictures — the first frame and the last — and describe what happens in between.**
 
-Ровный свет у окна, один и тот же вид (причёска, борода), никаких очков, кепок, фильтров и фото за разные годы — иначе нейросеть усреднит и получится твой брат.
+I burned four attempts trying to make my character get in on the driver's side using words: "left door", "the side nearest the camera", "don't walk around the car". He got in on the wrong side every time. It worked the moment I drew a frame where he's *already behind the wheel* and handed that over as the last frame.
 
-**Higgsfield → Soul → Soul ID → Create.** Загрузил, назвал, ждёшь 5 минут.
-
-Дальше: сгенерируй один чистый портрет и сохрани его как **Element** (`Save as Element`). Element — это «ты», который работает во всех моделях, а Soul ID сам по себе только в Soul.
-
-![Портрет для Element и он же в комнате](img/03_element.jpg)
+So the order is always: **pictures first, video second.** A picture costs 2 credits, a video costs 12.
 
 ---
 
-## 2. Комната
+## 1. Your face
 
-Сфотографируй свою — вертикально, без людей. Это лучше генерации: узнаваемо и бесплатно.
+25–30 photos: close-up front, 4 each at three-quarters left and right, 2 profiles, waist-up, full body, a few expressions.
 
-![Моя комната](img/01_room.jpg)
+Even light by a window, same haircut and beard in every shot. No glasses, caps, filters, or photos from different years — otherwise the model averages them and you get your cousin instead of you.
 
-Дальше из одного фото делаешь ракурсы: **Image → Nano Banana Pro → Multi-reference**, прикрепляешь фото, пишешь, куда переставить камеру.
+**Higgsfield → Soul → Soul ID → Create.** Upload, name it, wait five minutes.
 
-![Ракурсы: за спиной, на месте монитора, монитор крупно](img/02_angles.jpg)
+Then generate one clean portrait and save it as an **Element** (`Save as Element`). The Element is "you" that works in every model — Soul ID on its own only works inside Soul.
 
-Промпт всегда начинается с одной фразы — она держит комнату:
+![Portrait for the Element, and the same face placed in the room](img/03_element.jpg)
+
+---
+
+## 2. Your room
+
+Photograph your own — vertical, no people in frame. Better than generating one: instantly recognisable, and free.
+
+![My room](img/01_room.jpg)
+
+From that single photo you generate every camera angle: **Image → Nano Banana Pro → Multi-reference**, attach the photo, describe where to move the camera.
+
+![Angles: behind the chair, from the monitor, monitor close-up](img/02_angles.jpg)
+
+Every prompt starts with the same anchor sentence — that's what keeps the room identical:
 
 ```
 Use the reference image as the exact same room: same walls, same desk, same monitor,
@@ -48,112 +50,111 @@ same PS5, same shelf, same lamp, same LED strip, same chair.
 Do not add a PC tower. Do not add people.
 ```
 
-Дальше только про камеру: `Move the camera behind the gaming chair` / `Place the camera where the monitor is, looking back at the chair` / `Camera in front of the monitor, perpendicular`.
+Then only the camera: `Move the camera behind the gaming chair` / `Place the camera where the monitor is, looking back at the chair` / `Camera in front of the monitor, perpendicular`.
 
-Два правила: писать ЛЕВО и ПРАВО капсом, и всегда указывать, чего быть **не должно** — иначе дорисует системник и людей.
+Two habits that save you: write LEFT and RIGHT in caps, and always state what must **not** be there — otherwise it invents a PC tower and random people.
 
-**Экран монитора везде чёрный.** Всё, что на нём, накладывается потом в CapCut: нейросети не умеют рисовать интерфейсы, будет абракадабра.
-
----
-
-## 3. Домашняя часть
-
-Три клипа: интро 5 с → нажатие 3 с → затягивание 5 с.
-
-Сначала кадры (Nano Banana Pro + Element), потом видео (Kling 3.0, Start + End frame, Pro, звук off).
-
-![Эмоции и пустое кресло](img/04_emotions.jpg)
-
-**Эмоция — не удивление.** Первые версии я делал «он в шоке» — открытый рот, руки в стороны, выглядит глупо. Правильно: он знает, что сейчас будет. Уверенная полуулыбка, холодный взгляд, злость, капюшон. В промпт видео: `No surprise, no big reaction.`
-
-И всегда: `Camera locked on a tripod, no camera movement` — иначе Kling увезёт камеру в стену.
+**Keep the monitor screen black everywhere.** Whatever appears on it gets composited in CapCut later: models can't draw interfaces or readable text, you'll get gibberish.
 
 ---
 
-## 4. Портал
+## 3. The home part
 
-Переделывал пять раз. Вот разница:
+Three clips: intro 5s → button press 3s → getting pulled in 5s.
 
-| Работает | Не работает |
+Frames first (Nano Banana Pro + Element), then video (Kling 3.0, Start + End frame, Pro mode, sound off).
+
+![Expressions and the empty chair](img/04_emotions.jpg)
+
+**The expression is not surprise.** My first versions had him shocked — open mouth, hands flying. It looks stupid. The right read is: he knows exactly what's coming. Confident half-smile, cold stare, anger, hood up. In the video prompt: `No surprise, no big reaction.`
+
+And always: `Camera locked on a tripod, no camera movement` — otherwise Kling drifts the camera into the wall.
+
+---
+
+## 4. The portal
+
+I rebuilt this five times. Here's the difference:
+
+| Works | Doesn't work |
 |---|---|
-| Чёрный экран + одна короткая вспышка | Свет с лучами на всю комнату |
-| Вид сбоку или сверху | Рывок «на камеру» — персонаж орёт |
-| Физика: тело уходит в экран как в воду, геймпад падает, кресло откатывается | Вихри, спирали, частицы |
+| Black screen + one short flash | Light rays flooding the whole room |
+| Side or top angle | A lunge "at the camera" — the character ends up screaming |
+| Physics: body goes through the screen like water, controller drops, chair rolls back | Swirls, spirals, particles |
 | `practical-effect realism, no glow, no light rays` | `epic VFX, energy, magical` |
 
-![Затягивание в экран](img/05_pull.jpg)
+![Getting pulled into the screen](img/05_pull.jpg)
 
-Реализм дают не эффекты, а последствия: упавший геймпад и откатившееся кресло.
-
----
-
-## 5. Игровая часть
-
-Рисуешь цепочку ключевых кадров, показываешь себе, и только потом делаешь видео между ними.
-
-![Цепочка кадров для GTA](img/07_gta_chain.jpg)
-
-Пять кадров: выбежал из портала → открыл водительскую дверь → машина сорвалась с места → дрифт, впереди открывается портал → пустая улица.
-
-Три клипа между ними на **MiniMax H3** (12 кредитов за 6 с, 2K, и он отдаёт видео **со своим звуком** — мотор и шины попадают в кадр точно).
-
-![Дрифт и заезд в портал](img/06_portal_drift.jpg)
-
-**Непрерывное действие не режь катом.** Сначала я сделал дрифт и заезд в портал двумя клипами по 5 с — кат пришёлся на середину заноса, машина дёргалась. Один клип на 10 с — плавно.
-
+Realism doesn't come from the effect itself. It comes from the consequences: the dropped controller and the chair rolling away.
 
 ---
 
-## 6. Аутро
+## 5. Inside the game
 
-Одно на все ролики, зеркалит портал: пустое кресло → вспышка → выбрасывает из монитора обратно в кресло → ловит геймпад → смотрит в камеру → **стоп-кадр 2 секунды** под текст.
+You draw the whole chain of key frames first, look at them, and only then generate the video between them.
 
-![Финальный кадр](img/09_outro.jpg)
+![The frame chain for GTA](img/07_gta_chain.jpg)
 
-Делай фронтально — сбоку лицо мелкое и плывёт. Текст не вшивай в генерацию, добавляй в CapCut.
+Five frames: runs out of the portal → opens the driver's door → car pulls away → drift with a portal opening ahead → empty street.
+
+Three clips between them on **MiniMax H3** (12 credits for 6s, 2K — and it returns video **with its own audio**: engine and tyres land exactly on picture).
+
+![Drift and driving into the portal](img/06_portal_drift.jpg)
+
+**Never cut in the middle of a continuous action.** I first made the drift and the portal entry as two 5-second clips — the cut landed mid-slide and the car stuttered. One 10-second clip fixed it.
+
+To make the game obvious, generate your own loading screen with yourself on the key art and composite it onto the black monitor. No borrowed screenshots, nothing to get flagged for.
+
+![Loading screen](img/08_loading.jpg)
 
 ---
 
-## 7. Сборка
+## 6. The outro
 
-CapCut, 9:16. Встык без переходов: интро → нажатие → затягивание → белый слой 0.3 с → игра → аутро.
+One outro for every video, mirroring the portal: empty chair → flash → he's thrown **back out of the monitor** into the chair → catches the controller → looks into the lens → **2-second freeze** for your text.
 
-Картинку на монитор: положить поверх → **Distort** по четырём углам экрана → режим **Screen** → Glow 10–20 %.
+![Final frame](img/09_outro.jpg)
 
-Звук: из игровых клипов берёшь родной, для домашней части добавляешь из библиотеки CapCut — скрип кресла, клик геймпада, riser, «зап» вспышки, падение геймпада. Музыку — уже при публикации в Instagram.
+Shoot it head-on — from the side the face is small and drifts. Don't bake the text into the generation, add it in CapCut.
 
 ---
 
-## Что ломается чаще всего
+## 7. Assembly
 
-| Симптом | Решение |
+CapCut, 9:16. Straight cuts, no transitions: intro → press → pull-in → white layer 0.3s → game → outro.
+
+To put content on the monitor: place it above → **Distort** by the four corners of the screen → blend mode **Screen** → Glow 10–20%.
+
+Audio: keep the native track from the game clips, add library sounds for the home part — chair creak, controller click, riser, the flash "zap", the controller hitting the floor. Music goes on later, at publishing.
+
+---
+
+## What breaks most often
+
+| Symptom | Fix |
 |---|---|
-| Лицо не похоже | Element в каждый промпт с человеком; на дальних планах — 4 портрета сразу |
-| Комната каждый раз разная | Якорная фраза + мастер-кадр в референс |
-| Дорисовал системник, людей | Писать, чего быть не должно |
-| Камера уезжает | `Camera locked on a tripod` |
-| Портал дешёвый | Чёрный экран, одна вспышка, физика |
-| Сел не с той стороны | Кадр «уже за рулём» как последний |
-| Дрифт дёргается | Длинное действие — одним клипом |
-| Картинка повернулась | `Vertical 9:16, horizon horizontal, upright composition` |
+| Face doesn't look like you | Element in every prompt with a person; on wide shots attach 4 portraits at once |
+| Room changes every time | Anchor sentence + master frame as reference |
+| It invented a PC tower, or people | Spell out what must not be there |
+| Camera drifts away | `Camera locked on a tripod` |
+| Portal looks cheap | Black screen, one flash, physics |
+| Got in on the wrong side of the car | Make "already behind the wheel" the last frame |
+| Drift stutters | Long action = one clip |
+| Image came out rotated | `Vertical 9:16, horizon horizontal, upright composition` |
 
 ---
 
-## Цены
+## What it costs
 
-| Что | Кредиты |
+| Item | Credits |
 |---|---|
-| Картинка-кадр (Nano Banana Pro 2k) | 2 |
-| **MiniMax H3, 6 с / 10 с (2K)** | **12 / 20** |
-| Kling 3.0 Pro, 3 с / 5 с | 5 / 9 |
-| Seedance 2.0, 10 с 1080p | 110 ⚠️ |
+| Key frame (Nano Banana Pro, 2k) | 2 |
+| **MiniMax H3, 6s / 10s (2K)** | **12 / 20** |
+| Kling 3.0 Pro, 3s / 5s | 5 / 9 |
+| Seedance 2.0, 10s 1080p | 110 ⚠️ |
 
-Фундамент (лицо, комната, домашняя часть, аутро) — около 400 кредитов один раз. Новая игра — около 50.
-
----
-
-Вопросы — пиши в комментарии под роликом, отвечу по любому шагу.
+The foundation — face, room, home part, outro — is about 400 credits, once. Each new game after that is about 50.
 
 ---
 
-*Если что-то не получилось — напиши в комментариях под роликом, разберём.*
+Questions — drop them in the comments under any video, I answer everyone.
